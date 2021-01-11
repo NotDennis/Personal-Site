@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dennis Koh</title>
+
+    <!-- CSS stylesheets -->
+    <link rel="icon" type="image/png" href="/assets/images/circle-cropped copy.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/site.webmanifest">
+    <link rel='manifest' href='/manifest.json'>
+    <!-- aos css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/9b54928ef1.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!-- service worker -->
+    <script src="/ServiceWorker.js"></script>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3LQZ9X" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <a name="top"></a>
+    <nav class="navbar navbar-expand-lg selectDisable">
+        <a class="navbar-brand" href="index.html">
+            Dennis Koh
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="index.html#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="index.html#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="resume.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="Dennis_Resume.pdf" download="Dennis_Resume" target="_blank">Download Resume</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero-section" data-aos="fade-in" data-aos-duration="1000">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="hero-intro" class="col-lg-6">
+                    <div id="typerbox">
+                    <span class="typer selectDisable" id="main"
+                        data-words="Hello. My name is Dennis Koh. I am a senior at Conestoga High School." data-delay="100"
+                        data-deleteDelay="300" data-loop="1" data-aos="fade-up"></span>
+                    <span class="cursor selectDisable" data-owner="main"></span>
+                    </div>
+                    <p>Student. Researcher. Developer. Whatever you call me, I am a highly-driven individual who loves to work on new projects and 
+                        collaborate with people from all over the world.
+                    </p>
+                    <!-- <button class="blog-btn">Blog</button>
+                    <button class="resume-btn">Resume</button> -->
+                    <!-- <div class="buttons"> -->
+                    <span class="row selectDisable"><a href="index.html#about"><button
+                                class="blob-btn">
+                                Learn More
+                                <span class="blob-btn__inner">
+                                    <span class="blob-btn__blobs">
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                    </span>
+                                </span>
+                            </button></a>
+                        <!-- <br /> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                    <feColorMatrix in="blur" mode="matrix"
+                                        values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo">
+                                    </feColorMatrix>
+                                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                </filter>
+                            </defs>
+                        </svg></span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container-fluid">
+            <h3>About Me</h3>
+            <div class="intro">
+            <br>
+            <p>Hello! I'm Dennis, a high school senior at Conestoga High School in Berwyn, Pennsylvania.
+
+                <br><br>
+
+                I like creating things on the internet, whether that be websites, applications, designs, or anything else. My goal is to always design products that provide are aesthetically pleasing and smoothly-run.
+                
+                <br><br>
+                
+                As a freelance web developer and designer, I have been involved in quite a few projects. Additionally, I have experience using a variety of different languages, programs, platforms, and other software.
+                
+                <br><br>
+                
+                Here are a few technologies I've been working with recently:</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>PHP</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="selectDisable">
+        <div class="container-fluid">
+            <div class="project-header">
+                <h3>Check Out Some Projects</h3>
+                </div>
+                <br>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 project-showcase">
+                    <div class="card mt-4 mb-4" data-aos="fade-up" data-aos-duration="800">
+                        <div class="card-body web-card">
+                            <img src="assets/images/projects/Pixovo.PNG" alt="Pixovo">
+                            <p>Main Company Site</p>
+                            <h1><a href="https://www.pixovowebdev.com/" target="_blank">Pixovo</a></h1>
+                            <br>
+                            <h5>Source code <a href="https://github.com/NotDennis/Pixovo"><strong>here</strong></a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 project-showcase">
+                    <div class="card mt-4 mb-4" data-aos="fade-up" data-aos-duration="800">
+                        <div class="card-body mobile-card">
+                            <img src="assets/images/projects/Dream2Learn.PNG" alt="Pixovo">
+                            <p>Educational Nonprofit</p>
+                            <h1><a href="https://www.dream2learnedu.com/" target="_blank">Dream2Learn</a></h1>
+                            <br>
+                            <h5>Source code <a href="https://github.com/NotDennis/Dream2Learn"><strong>here</strong></a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-12 project-showcase">
+                    <div class="card mt-4 mb-4" data-aos="fade-up" data-aos-duration="800">
+                        <div class="card-body web-card">
+                                <img src="assets/images/projects/ComputersForKids.PNG" alt="Pixovo">
+                                <p>Club Website</p>
+                                <h1><a href="https://www.chscomputersforkids.com/" target="_blank">Computers For Kids</a></h1>
+                                <br>
+                                <h5>Source code <a href="https://github.com/DennisKoh135/enthusiastic-primrose-16065"><strong>here</strong></a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 project-showcase">
+                    <div class="card mt-4 mb-4" data-aos="fade-up" data-aos-duration="800">
+                        <div class="card-body mobile-card">
+                            <img src="assets/images/projects/Bellmare.PNG" alt="Pixovo">
+                            <p>Community Hub</p>
+                            <h1><a href="https://www.bellmarevillage.com" target="_blank">Bellmare Town</a></h1>
+                            <br>
+                            <h5>Source code <a href="https://github.com/NotDennis/bellmare-village/tree/master/Community%20Platform"><strong>here</strong></a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-12 project-showcase">
+                    <div class="card mt-4 mb-4" data-aos="fade-up" data-aos-duration="800">
+                        <div class="card-body web-card">
+                            <img src="assets/images/projects/News.PNG" alt="Pixovo">
+                            <p>News Page</p>
+                            <h1><a href="https://www.bellmarevillage.com/news/news/" target="_blank">Bellmare Times</a></h1>
+                            <br>
+                            <h5>Source code <a href="https://github.com/NotDennis/bellmare-village/tree/master/Community%20Platform"><strong>here</strong></a></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 project-showcase">
+                    <div class="card mt-4 mb-4" data-aos="fade-up" data-aos-duration="800">
+                        <div class="card-body mobile-card">
+                            <img src="assets/images/projects/COVID-19.PNG" alt="Pixovo">
+                            <p>API</p>
+                            <h1><a href="https://www.bellmarevillage.com/covid-19%20tracking%20page/" target="_blank">COVID-19 Tracker</a></h1>
+                            <br>
+                            <h5>Source code <a href="https://github.com/NotDennis/bellmare-village/tree/master/Community%20Platform"><strong>here</strong></a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-12 project-showcase">
+                    <div class="card mt-4 mb-4" data-aos="fade-up" data-aos-duration="800">
+                        <div class="card-body web-card">
+                            <img src="assets/images/projects/Breathing.PNG" alt="Pixovo">
+                            <p>JavaScript Application</p>
+                            <h1><a href="https://www.bellmarevillage.com/breathing%20meditation%20app/" target="_blank">Meditation App</a></h1>
+                            <br>
+                            <h5>Source code <a href="https://github.com/NotDennis/bellmare-village/tree/master/Community%20Platform"><strong>here</strong></a></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 project-showcase">
+                    <div class="card mt-4 mb-4" data-aos="fade-up" data-aos-duration="800">
+                        <div class="card-body mobile-card">
+                            <img src="assets/images/projects/Chatroom.PNG" alt="Pixovo">
+                            <p>JavaScript Application</p>
+                            <h1><a href="" target="_blank">Chatroom</a></h1>
+                            <br>
+                            <h5>Source code <a href="https://github.com/NotDennis/bellmare-village/tree/master/Community%20Platform"><strong>here</strong></a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-12 project-showcase">
+                    <div class="card mt-4 mb-4" data-aos="fade-up" data-aos-duration="800">
+                        <div class="card-body web-card">
+                            <img src="assets/images/projects/Portfolio.PNG" alt="Pixovo">
+                            <p>Personal Site</p>
+                            <h1><a href="https://github.com/KushalBhanot/Techify" target="_blank">Portfolio</a></h1>
+                            <br>
+                            <h5>Source code <a href=""><strong>here</strong></a></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 project-showcase">
+                    <div class="card mt-4 mb-4" data-aos="fade-up" data-aos-duration="800">
+                        <div class="card-body mobile-card">
+                            <img src="assets/images/projects/RayzCustoms.PNG" alt="Pixovo">
+                            <p>E-Commerce Site</p>
+                            <h1><a href="https://github.com/KushalBhanot/Techify" target="_blank">RayzCustoms</a></h1>
+                            <br>
+                            <h5>Source code <a href="https://github.com/NotDennis/RayzCustoms"><strong>here</strong></a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    <section id="contact">
+        <div class="container-fluid">
+
+
+        </div>
+    </section>
+
+
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        // service worker registering onload
+        window.addEventListener('load', () => {
+            registerSW();
+        });
+
+        async function registerSW() {
+            if ('serviceWorker' in navigator) {
+                try {
+                    await navigator.serviceWorker.register('/sw.js');
+                } catch (e) {
+                    console.log('SW Registration Failed');
+                }   
+            }
+        }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-T3LQZ9X');</script>
+<!-- End Google Tag Manager -->
+</body>
+
+</html>
